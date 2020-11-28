@@ -195,6 +195,13 @@ a:hover > label{
     a>img{
         max-width: 100%;
     }
+    .img2{
+        width: 85%;
+        margin-left: 10%;
+    }
+    .img3{
+        width: 80%;
+    }
     .img4{
         margin-left: 15%;
     }
