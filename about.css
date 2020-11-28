@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+:root{
+    --bg1 :  rgb(223, 217, 217);
+    --color-dark: #735D78;
+    --color-light: #282828;
+    --black-light: #282828;
+}
+body{
+    background-image: url(img/cork_1.png);
+}
+nav{   
+     background-image: url(img/cork_1.png);
+     /* overflow: visible; */
+}
+.about{
+    min-height: 100vh;
+    background-image: url(img/cork_1.png);
+}
+.flex{
+    display: flex;
+   flex-direction: row;
+}
+.profile-img{
+    width: 140%;
+    height: 80vh;
+    overflow: hidden;
+    content: " ";
+    background-color: var(--color-dark);
+
+}
+.profile-img>img{
+    background-size: contain;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-bottom: -5%;
+    
+}
+.intro{
+    margin: 0px 30px;
+    overflow: visible;
+}
+.intro>h1{
+    font-size: 90px;
+    color: transparent;
+    stroke-width: 2px;
+    margin-left: -15%;
+    -webkit-text-stroke-color: var(--color-light);
+    -webkit-text-stroke-width: 3px;
+    letter-spacing: 2px;
+}
+.name{
+    /* color:  var(--black-light) !important; */
+}
+.intro> p{
+    margin: 0px 35px;
+    font-size: 1.2em;
+    word-spacing: 2px;
+}
+footer{
+    min-height: 100vh;
+    background-color: var(--color-dark);
+}
+
+
+@media only screen and (max-width: 700px){
+    .flex{
+        flex-direction: column;
+    }
+    .intro>h1{
+        margin: -10% 2% 5%;
+    }
+    .intro>p{
+        margin-bottom: 100px;
+    }
+    .profile-img{
+        height: 65vh;
+    }
+    .profile-img>img{
+        margin-top: 10%;
+    }
+}

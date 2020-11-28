@@ -5,8 +5,6 @@
     --color-dark: #735D78;
     --color-light: #282828;
     --black-light: #282828;
-    
-
 }
 *{
     margin: 0px;
@@ -18,6 +16,8 @@ body{
     position: relative;
     background-color: var(--bg1);
     /* border: solid 10px var(--color-light); */
+        background-image: url(img/white_texture.png);
+ 
 }
 .topnav{
     min-height: 100px;
@@ -168,16 +168,7 @@ filter: contrast(120%);
 a:hover > label{
     visibility: visible;
 }
-.rect1{
-    content: " ";
-    padding: 50px;
-    border: solid var(--color-dark) 4px;
-    width: 0px;
-    margin-left: 70%;
-    transform: rotateZ(45deg);
-    z-index: -2;
-    border-radius: 5px;
-}
+
 
 .social{
     list-style-type: none;
@@ -206,14 +197,24 @@ a:hover > label{
     .img4{
         margin-left: 15%;
     }
-    .mid{
-        top: 100vh;
-    }
-    .btm{
-        top: 200vh;
-    }
     .blob{
+        top:-8vh ;
         left: 50%;
         width: 40vmax;
     }
+    .front{
+        width: 20vmax;
+        left: 65%;
+        top: -2%;
+    }
+    .mid{
+        top: 120vh;
+        width: 35vmax;
+        left: -20%;
+    }
+    .btm{
+        top: 250vh;
+    }
+ 
+    
 }
