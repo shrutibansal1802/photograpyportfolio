@@ -212,4 +212,8 @@ a:hover > label{
     .btm{
         top: 200vh;
     }
+    .blob{
+        left: 50%;
+        width: 40vmax;
+    }
 }
