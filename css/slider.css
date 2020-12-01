@@ -39,10 +39,12 @@ body {
   .slides-nav__nav {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    left: -350%;
+    left: -345%;
     top: 40%;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 700;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 0.1px;
   }
 }
 
