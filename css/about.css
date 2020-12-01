@@ -7,15 +7,15 @@
     --black-light: #282828;
 }
 body{
-    background-image: url(img/cork_1.png);
+    background-image: url(/img/white_texture.png);
 }
 nav{   
-     background-image: url(img/cork_1.png);
+     background-image: url(/img/white_texture.png);
      /* overflow: visible; */
 }
 .about{
     min-height: 100vh;
-    background-image: url(img/cork_1.png);
+    background-image: url(/img/white_texture.png);
 }
 .flex{
     display: flex;

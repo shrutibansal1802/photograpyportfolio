@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
-
+// fonts
+$font-header: Montserrat, helvetica;
+$font-nav : "Space Mono", monospace;
+// colors
+$color-dark: #111;
+$color-border: #ccc;
+$color-trans-bg: #ededed;
 :root{
     --bg1 :  rgb(223, 217, 217);
     --color-dark: #735D78;
@@ -16,7 +22,7 @@ body{
     position: relative;
     background-color: var(--bg1);
     /* border: solid 10px var(--color-light); */
-        background-image: url(img/white_texture.png);
+     background-image: url("/img/white_texture.png");
  
 }
 .topnav{
@@ -47,6 +53,45 @@ body{
     
     font-family: 'Poppins', sans-serif;
 }
+button{
+    position: relative;
+    display:inline-block;
+    // padding: 0.35em;
+    margin: 0;
+    font-family: $font-nav;
+    appearance: none;
+    background:transparent;
+    border: 0;
+    overflow-x:hidden;
+    transition: color 0.5s ease;
+    
+    &:after{
+      content:'';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height:1px;
+      width: 0;
+      background: $color-dark;
+      transition: width 0.4s ease;
+    }
+    &:hover{
+      cursor:pointer;
+      color: rgba($color-dark, 0.75);
+      transition: color 0.5s ease;
+    }
+    &:hover:after{
+      width:100%;
+      transition: width 0.4s ease;
+    }
+    // Yeah... I know
+    &:focus{
+      outline: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+  }
 
 .blob{
     width: 300px;
@@ -215,6 +260,4 @@ a:hover > label{
     .btm{
         top: 250vh;
     }
- 
-    
 }
