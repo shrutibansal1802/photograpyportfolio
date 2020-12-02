@@ -27,6 +27,7 @@ nav{
     overflow: hidden;
     content: " ";
     background-color: var(--color-dark);
+    
 
 }
 .profile-img>img{
@@ -49,18 +50,27 @@ nav{
     -webkit-text-stroke-width: 3px;
     letter-spacing: 2px;
 }
-.name{
-    /* color:  var(--black-light) !important; */
-}
+
 .intro> p{
-    margin: 0px 35px;
+    margin: 0px 25px;
     font-size: 1.2em;
     word-spacing: 2px;
 }
+.icons{
+    margin-top: 30px;
+}
+.icons>li{
+    list-style-type: none;
+    display: inline;
+    padding: 0px 10px ;
+    margin: 10px 20px ;
+
+}
 footer{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: var(--color-dark);
 }
+
 
 
 @media only screen and (max-width: 700px){
@@ -74,9 +84,16 @@ footer{
         margin-bottom: 100px;
     }
     .profile-img{
-        height: 65vh;
+        height: 50vh;
+        /* width: 100%; */
     }
     .profile-img>img{
-        margin-top: 10%;
+        margin-top: 7%;
+    }
+    .icons{
+        margin-top: 0px;
+    }
+    .icons>li{
+        margin: 5px ;
     }
 }
