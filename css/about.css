@@ -84,16 +84,17 @@ footer{
         margin-bottom: 100px;
     }
     .profile-img{
-        height: 50vh;
+        height: 65vh;
         /* width: 100%; */
     }
     .profile-img>img{
-        margin-top: 7%;
+        margin-top: 8%;
     }
     .icons{
-        margin-top: 0px;
+        margin: 0px auto;
     }
     .icons>li{
         margin: 5px ;
+        padding: 0px 10px;
     }
 }
